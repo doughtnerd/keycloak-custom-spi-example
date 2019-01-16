@@ -1,4 +1,4 @@
-package org.doughtnerd.keycloak.providers.events.eventListenerExample;
+package org.doughtnerd.keycloak.providers.events;
 
 
 import org.jboss.logging.Logger;
@@ -18,6 +18,7 @@ public class RegisterEventListenerProvider implements EventListenerProvider {
 	}
 
 	public void onEvent(Event event) {
+		logger.info("Called onEvent...");
 		if (event.getType().equals(EventType.REGISTER)) {
         	logger.info("Caught Registration Event.... Do what you like from here.");
         }

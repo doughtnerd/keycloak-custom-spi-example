@@ -1,4 +1,4 @@
-package org.doughtnerd.keycloak.providers.events.eventListenerExample;
+package org.doughtnerd.keycloak.providers.events;
 
 import org.keycloak.Config.Scope;
 import org.keycloak.events.EventListenerProvider;
