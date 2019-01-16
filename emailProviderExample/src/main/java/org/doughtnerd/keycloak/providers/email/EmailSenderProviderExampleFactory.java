@@ -1,4 +1,4 @@
-package org.doughtnerd.keycloak.providers.email.emailProviderExample;
+package org.doughtnerd.keycloak.providers.email;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -17,13 +17,10 @@ public class EmailSenderProviderExampleFactory implements EmailSenderProviderFac
 	public EmailSenderProvider create(KeycloakSession session) {
 		logger.warn("....Create called....");
 		EmailSenderExampleProvider provider = new EmailSenderExampleProvider(session);
-		logger.warn("Provider is null? " + provider == null);
 		return provider;
 	}
 
 	public void init(Config.Scope config) {
-		logger.warn("Random config is: " + config.get("aString"));
-		logger.warn(config);
 	}
 
 	public void postInit(KeycloakSessionFactory factory) {

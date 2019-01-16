@@ -1,4 +1,4 @@
-package org.doughtnerd.keycloak.providers.email.emailProviderExample;
+package org.doughtnerd.keycloak.providers.email;
 
 import org.jboss.logging.Logger;
 import org.keycloak.email.EmailException;
