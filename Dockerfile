@@ -13,7 +13,4 @@ COPY src/config/standalone.xml /opt/jboss/keycloak/standalone/configuration/
 
 COPY --from=mavenImage */target/*with-dependencies.jar /opt/jboss/keycloak/standalone/deployments/
 
-ENV KEYCLOAK_USER admin
-ENV KEYCLOAK_PASSWORD password
-
 EXPOSE 8080
